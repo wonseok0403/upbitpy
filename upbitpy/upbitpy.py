@@ -20,8 +20,8 @@ class Upbitpy():
         :param str access_key: 발급 받은 acccess key
         :param str secret: 발급 받은 secret
         '''
-        self.access_key = 'EPuY61jWMtixqaBJsyvoIyaXsRKeCWqJ6QNVPGr9'
-        self.secret = '30MeosYha3MJcdwil3ifTQgYQLWnlAKxAh5ARcoG'
+        self.access_key = 
+        self.secret = 
         self.markets = self._load_markets()
 
     ###############################################################

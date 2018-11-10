@@ -40,8 +40,8 @@ def BUYKRW(TargetToBuy, price) :
 				break
 			else :
 				print('매수 확인 중')
-		except e:
-			print(e)
+		except :
+			print('예외발생')
 	
 	SELLBTC(TargetToBuy, volume. price)
 	#SELLBTC(TargetToBuy, volume. price)
@@ -72,8 +72,8 @@ def SELLBTC(TargetToBuy, volume, price) :
 				volume = orderResult['executed_volume']
 				price = orderResult['trades']['price']
 				break
-		except e:
-			print(e)
+		except :
+			print('예외발생')
 
 	# Bitcoin to KRW
 	print("매도 신청, 개수 : ", volume, "가격 : ",int(price), "총 가격 : ", volume*price)
@@ -87,8 +87,8 @@ def SELLBTC(TargetToBuy, volume, price) :
 			if( orderResult['state'] == 'done') :
 				print('매도 확인 완료!')
 				break
-		except e:
-			print(e)
+		except :
+			print('예외발생')
 
 
 while True:
@@ -117,5 +117,5 @@ while True:
 				continue
 		KRWList.pop()
 		BTCList.pop()
-	except e :
-		print(e)
+	except  :
+			print('예외발생')
